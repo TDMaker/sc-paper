@@ -1,0 +1,160 @@
+[
+    {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "EventInformTaskInfo",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "chairperson",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_serviceProvider",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_fileName",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint64",
+                "name": "_blockSize",
+                "type": "uint64"
+            },
+            {
+                "internalType": "uint192",
+                "name": "_blockAmount",
+                "type": "uint192"
+            }
+        ],
+        "name": "enrollFile",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "enrolledFiles",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "dataOwner",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "serviceProvider",
+                "type": "address"
+            },
+            {
+                "internalType": "uint64",
+                "name": "blockSize",
+                "type": "uint64"
+            },
+            {
+                "internalType": "uint192",
+                "name": "blockAmount",
+                "type": "uint192"
+            },
+            {
+                "internalType": "uint256",
+                "name": "lastAudit",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_fileName",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_challengeAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "requestAudit",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    }
+]
